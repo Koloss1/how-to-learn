@@ -14,12 +14,227 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  background-color:  #f2f2f2;
+}
+
+.logo_place_header {
+  position: absolute;
+  z-index: 1;
+  height: 32px;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  position: relative;
+  margin: 0 64px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600;
+  width: 730px;
+  z-index: 2;
+  align-self: center;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+}
+
+/* Ниже перечислены правила для первой секции description */
+.description {
+  margin: 100px 0;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.two-columns__paragraph:nth-of-type(2) {
+  margin: 30px 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bolder;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Ниже правила дял второй секции "Цифры и факты" */
+/* .digits {
+  display: block;
+} */
+
+.table {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1100px;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 0 0;
+}
+
+/* Дальше идёт секция Фейнмана */
+.feynman {
+  margin: 100px 0 0 0;
+  position: relative;
+  height: 890px;
+  background-color:  #f2f2f2;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  width: 648px;
+  text-align: center;
+  margin: 100px auto 70px;
+  padding-top: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.feynman__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Ниже последняя секция */
+.kaufman {
+  padding: 90px 0;
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  top: 0;
+  right: -210px;
+  z-index: 0;
+  background-size: contain;
+}
+
+.section-title_theme_dark {
+  color: white;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +243,12 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ниже подвал сайта */
+.footer {
+  padding: 60px 0 40px;
+  background-color:  #1f1f1f;
 }
