@@ -187,7 +187,6 @@
   position: relative;
   z-index: 2;
   margin: auto;
-  max-width: 500px;
 }
 
 .feynman__link {
@@ -199,7 +198,7 @@
   right: 48px;
   text-decoration: none;
   color: #2f80ed;
-  z-index: 2;
+  z-index: 3;
 }
 
 .feynman__image {
