@@ -186,7 +186,7 @@
   text-align: center;
   position: relative;
   z-index: 2;
-  margin: auto;
+  margin: 0;
 }
 
 .feynman__link {
