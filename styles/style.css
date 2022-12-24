@@ -1,11 +1,7 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -13,10 +9,14 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   position: relative;
   display: flex;
   background-color: #f2f2f2;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
 }
 
 .logo_place_header {
@@ -46,6 +46,8 @@
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
+  margin: 0;
+  z-index: 2;
 }
 
 .header__link {
@@ -62,7 +64,6 @@
   z-index: 1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -72,7 +73,6 @@
   right: 0;
 }
 
-/* Ниже перечислены правила для первой секции description */
 .description {
   margin: 100px 0;
 }
@@ -90,6 +90,7 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -114,7 +115,6 @@
   font-weight: 600;
 }
 
-/* Ниже правила для второй секции "Цифры и факты" */
 .table {
   display: flex;
   justify-content: space-between;
@@ -158,11 +158,10 @@
   margin: 20px 0 0 0;
 }
 
-/* Дальше идёт секция Фейнмана */
 .feynman {
   margin: 100px 0 0 0;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
 }
 
@@ -205,7 +204,6 @@
   z-index: 0;
 }
 
-/* Ниже последняя секция */
 .kaufman {
   padding: 90px 0;
   background-color: #1f1f1f;
@@ -232,7 +230,6 @@
   color: white;
 }
 
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -242,10 +239,12 @@
   z-index: 1;
 }
 
-/* Ниже подвал сайта */
 .footer {
   padding: 60px 0 40px;
   background-color: #1f1f1f;
+  display: flex;
+  min-height: 350px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -254,27 +253,27 @@
   color: white;
   position: relative;
   justify-content: space-between;
-  min-height: 350px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__author {
-  position: absolute;
-  bottom: 18px;
-  left: 0;
-  margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 18px 0;
 }
 
 .footer__column-links {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .footer__column-heading {
